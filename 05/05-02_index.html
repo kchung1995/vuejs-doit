@@ -1,0 +1,24 @@
+<!-- 자바스크립트 표현식 예제 -->
+<html>
+  <head>
+    <title>Vue JavaScript Expression Example</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ message }}</p>
+      <p>{{ message + '!!!' }}</p>
+      <p>{{ message.split('').reverse().join('') }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue.js!",
+        },
+      });
+    </script>
+  </body>
+</html>
